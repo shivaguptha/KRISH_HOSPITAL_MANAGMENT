@@ -16,7 +16,7 @@ const MessageForm = () => {
     try {
       await axios
         .post(
-          "https://h-krish-backend.onrender.com/api/v1/message/send",
+          "https://h-hico.onrender.com/api/v1/message/send",
           { firstName, lastName, email, phone, message },
           {
             withCredentials: true,

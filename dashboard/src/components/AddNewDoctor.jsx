@@ -66,7 +66,7 @@ const AddNewDoctor = () => {
       if (doctor) {
         // Update doctor (PUT)
         await axios.put(
-          `http://localhost:4000/api/v1/user/doctor/update/${doctor._id}`,
+          `https://h-hico.onrender.com/api/v1/user/doctor/update/${doctor._id}`,
           formData,
           {
             withCredentials: true,
@@ -77,7 +77,7 @@ const AddNewDoctor = () => {
       } else {
         // Add new doctor (POST)
         await axios.post(
-          "http://localhost:4000/api/v1/user/doctor/addnew",
+          "https://h-hico.onrender.com/api/v1/user/doctor/addnew",
           formData,
           {
             withCredentials: true,

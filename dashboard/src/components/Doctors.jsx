@@ -13,7 +13,7 @@ const Doctors = () => {
     const fetchDoctors = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:4000/api/v1/user/doctors",
+          "https://h-hico.onrender.com/api/v1/user/doctors",
           { withCredentials: true }
         );
         setDoctors(data.doctors);
@@ -32,7 +32,7 @@ const Doctors = () => {
   const handleDelete = async (id) => {
     try {
       await axios.delete(
-        `http://localhost:4000/api/v1/user/doctor/delete/${id}`,
+        `https://h-hico.onrender.com/api/v1/user/doctor/delete/${id}`,
         { withCredentials: true }
       );
       setDoctors((prev) => prev.filter((doc) => doc._id !== id));
