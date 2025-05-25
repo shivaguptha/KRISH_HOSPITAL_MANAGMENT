@@ -8,25 +8,22 @@ import { Context } from "../main";
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const { isAuthenticated, setIsAuthenticated } = useContext(Context);
-  const navigateTo = useNavigate();
 
-  // Updated logout function with confirmation
   const handleLogout = async () => {
-    const confirmed = window.confirm("Are you sure you want to logout?");
-    if (!confirmed) return;
-
-    try {
-      const res = await axios.get(
-        "https://h-hico.onrender.com/api/v1/user/patient/logout",
-        { withCredentials: true }
-      );
-      toast.success(res.data.message);
-      setIsAuthenticated(false);
-      navigateTo("/login");
-    } catch (err) {
-      toast.error(err.response?.data?.message || "Logout failed!");
-    }
+    await axios
+      .get("https://h-hico.onrender.com/api/v1/user/patient/logout", {
+        withCredentials: true,
+      })
+      .then((res) => {
+        toast.success(res.data.message);
+        setIsAuthenticated(false);
+      })
+      .catch((err) => {
+        toast.error(err.response.data.message);
+      });
   };
+
+  const navigateTo = useNavigate();
 
   const goToLogin = () => {
     navigateTo("/login");
@@ -54,7 +51,7 @@ const Navbar = () => {
             </Link>
           </div>
           {isAuthenticated ? (
-            <button className="logoutBtn btn" onClick={handleLogout}>
+            <button className="logoutBtn btn" onClick={() => alert(`You clicked on ${depart.name}`) && handleLogout}>
               LOGOUT
             </button>
           ) : (
