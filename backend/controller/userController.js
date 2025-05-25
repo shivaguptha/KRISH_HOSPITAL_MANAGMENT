@@ -293,6 +293,8 @@ export const logoutAdmin = catchAsyncErrors(async (req, res, next) => {
     .json({
       success: true,
       message: "Admin Logged Out Successfully.",
+      secure: true,
+      sameSite: "None"
     });
 });
 
@@ -303,6 +305,8 @@ export const logoutPatient = catchAsyncErrors(async (req, res, next) => {
     .cookie("patientToken", "", {
       httpOnly: true,
       expires: new Date(Date.now()),
+      sameSite: "None",
+      secure: true
     })
     .json({
       success: true,
