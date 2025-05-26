@@ -10,6 +10,10 @@ const Navbar = () => {
   const { isAuthenticated, setIsAuthenticated } = useContext(Context);
 
   const handleLogout = async () => {
+
+    const confirmLogout = window.confirm("Are you sure you want to log out?");
+    if (!confirmLogout) return;
+
     await axios
       .get("https://h-hico.onrender.com/api/v1/user/patient/logout", {
         withCredentials: true,
@@ -22,6 +26,13 @@ const Navbar = () => {
         toast.error(err.response.data.message);
       });
   };
+
+  const navigateTo = useNavigate();
+
+  const goToLogin = () => {
+    navigateTo("/login");
+  };
+
 
   const navigateTo = useNavigate();
 
