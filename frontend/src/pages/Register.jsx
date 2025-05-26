@@ -14,7 +14,7 @@ const Register = () => {
   const [dob, setDob] = useState("");
   const [gender, setGender] = useState("");
   const [password, setPassword] = useState("");
-  const [confirmpassword, setconfirmPassword] = useState("");
+  const [confirmPassword, setconfirmPassword] = useState("");
 
   const navigateTo = useNavigate();
 
@@ -24,7 +24,7 @@ const Register = () => {
       await axios
         .post(
           "https://h-hico.onrender.com/api/v1/user/patient/register",
-          { firstName, lastName, email, phone, dob, gender, password, confirmpassword },
+          { firstName, lastName, email, phone, dob, gender, password, confirmPassword},
           {
             withCredentials: true,
             headers: { "Content-Type": "application/json" },
@@ -113,8 +113,8 @@ const Register = () => {
             />
             <input
               type="password"
-              placeholder="confirmpassword"
-              value={confirmpassword}
+              placeholder="confirmPassword"
+              value={confirmPassword}
               onChange={(e) => setconfirmPassword(e.target.value)}
             />
 
