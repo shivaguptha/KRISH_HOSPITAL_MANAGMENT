@@ -17,6 +17,10 @@ const Sidebar = () => {
   const { isAuthenticated, setIsAuthenticated } = useContext(Context);
 
   const handleLogout = async () => {
+
+    const confirmLogout = window.confirm("Are you sure you want to log out?");
+    if (!confirmLogout) return;
+
     await axios
       .get("https://h-hico.onrender.com/api/v1/user/admin/logout", {
         withCredentials: true,
@@ -29,6 +33,8 @@ const Sidebar = () => {
         toast.error(err.response.data.message);
       });
   };
+
+
 
   const navigateTo = useNavigate();
 

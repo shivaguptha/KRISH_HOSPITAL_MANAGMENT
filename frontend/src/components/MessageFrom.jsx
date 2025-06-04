@@ -38,9 +38,9 @@ const MessageForm = () => {
 
   return (
     <>
-      <div className="container form-component message-form">
-        <div>
+          <div style={{ display: "flex", backgroundColor:"#1a1a1a",flexDirection: "column",marginLeft: "auto", marginRight: "auto", alignItems: "center",marginBottom: "100px",boxShadow: "0 0 30px rgb(255, 255, 255)", padding: "20px",width:"400px"}}>
             <h4>Contact Details</h4>
+            <br />
             <div className="contact-details">
               <FaPhone />
               <span>+91-9618148039</span>
@@ -57,10 +57,16 @@ const MessageForm = () => {
             </div>
            
           </div>
-          <br />
-          <br />
-          <br />
-          <br />
+
+      <div className="container form-component message-form"
+      style={{width: "800px", display: "flex", justifyContent: "space-between",
+        alignItems: "center", flexDirection: "column", marginTop: "10px", marginBottom: "50px",
+         boxShadow: "0 0 30px rgb(255, 255, 255)", gap: "20px",paddingTop:"50px",paddingBottom: "40px",
+        marginLeft: "auto", marginRight: "auto" ,height: "600px"
+        }}
+      >
+
+
         <h2>Send Us A Message</h2>
         <form onSubmit={handleMessage}>
           <div>
@@ -97,7 +103,7 @@ const MessageForm = () => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
-          <div style={{ justifyContent: "center", alignItems: "center" }}>
+          <div style={{ justifyContent: "center", alignItems: "center",marginTop: "20px" }}>
             <button type="submit">Send</button>
           </div>
         </form>

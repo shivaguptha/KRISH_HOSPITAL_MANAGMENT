@@ -68,7 +68,7 @@ const Doctors = () => {
                     Phone: <span>{element.phone}</span>
                   </p>
                   <p>
-                    DOB: <span>{element.dob.substring(0, 10)}</span>
+                    DOB: <span>{element.dob.substring(8, 10)+'/'+element.dob.substring(5, 7)+'/'+element.dob.substring(0, 4)}</span>
                   </p>
                   <p>
                     Department: <span>{element.doctorDepartment}</span>

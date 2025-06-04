@@ -8,7 +8,9 @@ import { Context } from "../main";
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const { isAuthenticated, setIsAuthenticated } = useContext(Context);
+  // const navigateTo = useNavigate();
 
+  // This function shows the confirmation and, if confirmed, calls handleLogout
   const handleLogout = async () => {
 
     const confirmLogout = window.confirm("Are you sure you want to log out?");
@@ -29,12 +31,8 @@ const Navbar = () => {
 
   const navigateTo = useNavigate();
 
-  const goToLogin = () => {
-    navigateTo("/login");
-  };
 
 
-  const navigateTo = useNavigate();
 
   const goToLogin = () => {
     navigateTo("/login");
@@ -62,7 +60,7 @@ const Navbar = () => {
             </Link>
           </div>
           {isAuthenticated ? (
-            <button className="logoutBtn btn" onClick={() => alert("Do you really want to Logout") && handleLogout}>
+            <button className="logoutBtn btn" onClick={handleLogout}>
               LOGOUT
             </button>
           ) : (

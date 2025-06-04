@@ -89,7 +89,13 @@ const AppointmentForm = () => {
 
   return (
     <>
-      <div className="container form-component appointment-form">
+      <div className="container form-component appointment-form"
+      style={{width: "800px", display: "flex", justifyContent: "space-between",
+        alignItems: "center", flexDirection: "column", marginTop: "50px", marginBottom: "50px",
+         boxShadow: "0 0 30px rgb(255, 255, 255)", gap: "20px",paddingTop:"auto",paddingBottom: "auto",
+        marginLeft: "auto", marginRight: "auto" 
+        }}
+      >
         <h2>Appointment</h2>
         <form onSubmit={handleAppointment}>
           <div>

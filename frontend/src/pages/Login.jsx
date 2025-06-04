@@ -43,12 +43,17 @@ const Login = () => {
 
   return (
     <>
-      <div className="container form-component login-form">
-        <h2>Sign In</h2>
+      <div className="container form-component login-form"
+      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+      >
+        <img src="/logo.png" alt="" style={{width: "300px", height: "300px" ,marginTop: "50px"}}/>
+
+        <h2 style={{color: "pink"}}>Sign In</h2>
+        <br />
         <p>Please Login To Continue</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat culpa
-          voluptas expedita itaque ex, totam ad quod error?
+        <br />
+        <p style={{marginBottom: "50px", width: "800px", textAlign: "center"}}>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, deserunt! At impedit blanditiis beatae nostrum voluptatem facilis quibusdam, temporibus saepe laborum, obcaecati vel repellat facere, officia deleniti magni a odit!
         </p>
         <form onSubmit={handleLogin}>
           <input
@@ -56,12 +61,15 @@ const Login = () => {
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            style={{marginTop: "20px" , marginBottom: "10px" , width: "500px", alignItems: "center" }}
           />
           <input
             type="password"
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            style={{ marginBottom: "10px" , width: "500px" }}
+
           />
           <div
             style={{
@@ -73,7 +81,7 @@ const Login = () => {
             <p style={{ marginBottom: 0 }}>Not Registered?</p>
             <Link
               to={"/register"}
-              style={{ textDecoration: "none", color: "#271776ca" }}
+              style={{ textDecoration: "none", color: "pink" }}
             >
               Register Now
             </Link>

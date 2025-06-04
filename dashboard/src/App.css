@@ -41,91 +41,6 @@ body {
     width: 100%;
   }
 }
-.form-title{
-  font-size: 1.75rem;
-  color: pink;
-  margin-bottom: 30px;
-}
-.form-component {
-  padding-top: 40px;
-  padding-bottom: 60px;
-  min-height: 100vh;
-  background: #e5e5e5;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-.form-component h2 {
-  color: pink;
-  letter-spacing: 4px;
-  margin-bottom: 30px;
-}
-.form-component h4 {
-  color: pink;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-.form-component p {
-  max-width: 750px;
-  color: pink;
-  margin-bottom: 20px;
-  text-align: center;
-}
-.form-component form {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  width: 550px;
-}
-.add-admin-form form {
-  width: 100%;
-}
-.form-component p:first-child {
-  font-size: 28px;
-  font-weight: 700;
-  color: pink;
-  margin-top: 30px;
-}
-.form-component form div {
-  display: flex;
-  gap: 30px;
-}
-.form-component form input,
-.form-component form select,
-.form-component form textarea {
-  flex: 1;
-  font-size: 24px;
-  padding: 10px 10px 10px 40px;
-  border-radius: 7px;
-  border: 1px solid pink;
-}
-.form-component button {
-  padding: 10px 35px;
-  color: #fff;
-  font-weight: 700;
-  width: fit-content;
-  border: none;
-  border-radius: 8px;
-  font-size: 24px;
-  margin-bottom: 30px;
-  background: linear-gradient(140deg, #9083d5, #271776ca);
-}
-.form-component .wrapper {
-  display: flex;
-  gap: 50px;
-}
-.form-component .wrapper .banner {
-  flex: 1;
-}
-.form-component .wrapper .banner:last-child {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.form-component .wrapper .banner:last-child img {
-  max-width: 450px;
-}
 @media (max-width: 888px) {
   .form-component {
     padding-top: 30px;
@@ -189,7 +104,7 @@ body {
   font-size: 34px;
 }
 .dashboard .banner:first-child .firstBox .content div h5 {
-  color: pink;
+  color: #3939d9f2;
 }
 .dashboard .banner:first-child .firstBox .content p {
   font-size: 16px;
@@ -199,7 +114,7 @@ body {
   color: #fff;
 }
 .dashboard .banner:first-child .thirdBox {
-  color: pink;
+  color: #3939d9f2;
   background: #fff;
 }
 .dashboard .banner:first-child .secondBox,
@@ -535,10 +450,16 @@ body {
 .add-doctor-form form select,
 .add-doctor-form form textarea {
   flex: 1;
-  font-size: 24px;
-  padding: 10px 10px 10px 40px;
-  border-radius: 7px;
-  border: 1px solid pink;
+  font-size: 18px;
+  color: #fff;
+  padding: 10px 0;
+  width: 200px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #ffffff;
+  margin-bottom: 30px;
+  outline: none;
+  transition: all 0.3s ease;
 }
 .add-doctor-form button {
   padding: 10px 35px;
@@ -620,9 +541,17 @@ input[type="time"]:before {
   .add-doctor-form form input,
   .add-doctor-form form select,
   .add-doctor-form form textarea {
-    background: #23272f;
-    color: #e0e0e0;
-    border: 1px solid #444;
+  flex: 1;
+  font-size: 18px;
+  color: #fff;
+  padding: 10px 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #ffffff;
+  margin-bottom: 30px;
+  outline: none;
+  width: 360px;
+  transition: all 0.3s ease;
   }
   .dropdown {
     background: #23272f;
@@ -638,13 +567,42 @@ input[type="time"]:before {
     color: #e0e0e0;
     border: 1px solid #444;
   }
+
   .form-component button,
   .add-doctor-form button {
-    background: linear-gradient(140deg, #23272f, #3939d9f2);
-    color: #fff;
+  padding: 12px 35px;
+  color: #fff;
+  font-weight: 700;
+  width: fit-content;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  margin: 0 auto 30px auto;
+  background: linear-gradient(145deg, #303e5d, #3939d9f2);
+  transition: all 0.3s ease;
+  }
+  .form-component button:hover,
+  .add-doctor-form button:hover {
+  background: linear-gradient(145deg, #303e5d, #3939d9f2);
   }
   input[type="date"]:before,
   input[type="time"]:before {
     color: #bdbdbd;
   }
+}
+/* .input-field{
+  flex: 1;
+  font-size: 18px;
+  color: #fff;
+  padding: 10px 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #ffffff;
+  margin-bottom: 30px;
+  outline: none;
+  transition: all 0.3s ease;
+} */
+.input-field:focus{
+  border-bottom: 3px solid #3939d9f2;
+  background-color: transparent;
 }

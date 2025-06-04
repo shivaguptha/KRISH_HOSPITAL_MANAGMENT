@@ -24,7 +24,7 @@ const Register = () => {
       await axios
         .post(
           "https://h-hico.onrender.com/api/v1/user/patient/register",
-          { firstName, lastName, email, phone, dob, gender, password, confirmPassword},
+          { firstName, lastName, email, phone, dob, gender, password, confirmPassword },
           {
             withCredentials: true,
             headers: { "Content-Type": "application/json" },
@@ -55,15 +55,14 @@ const Register = () => {
 
   return (
     <>
-      <div className="container form-component register-form">
-        <h2>Sign Up</h2>
-        <p>Please Sign Up To Continue</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat culpa
-          voluptas expedita itaque ex, totam ad quod error?
+     <div className="container form-component register-form" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <h2 style={{marginTop: "100px",color:"pink"}}>Sign Up</h2>
+        <p style={{ marginBottom: "50px", width: "800px", textAlign: "center" }}>Please Sign Up To Continue</p>
+        <p style={{ marginBottom: "50px", width: "800px", textAlign: "center" }}>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, nam non! Aperiam, placeat id delectus quos iusto aut aliquid distinctio corrupti, officia possimus magnam perspiciatis ab ut porro vel accusamus!
         </p>
         <form onSubmit={handleRegistration}>
-          <div>
+          <div style={{width: "1000px", display: "flex", justifyContent: "space-between"}}>
             <input
               type="text"
               placeholder="First Name"
@@ -92,8 +91,10 @@ const Register = () => {
             />
           </div>
           <div>
-            <select value={gender} onChange={(e) => setGender(e.target.value)}>
-              <option value="">Select Gender</option>
+            <select  value={gender} 
+            className="styled-input"
+            onChange={(e) => setGender(e.target.value)}>
+              <option style={{}} value="">Select Gender</option>
               <option value="Male">Male</option>
               <option value="Female">Female</option>
             </select>
@@ -113,8 +114,8 @@ const Register = () => {
             />
             <input
               type="password"
-              placeholder="confirmPassword"
-              value={confirmPassword}
+              placeholder="confirmpassword"
+              value={confirmpassword}
               onChange={(e) => setconfirmPassword(e.target.value)}
             />
 
@@ -129,7 +130,7 @@ const Register = () => {
             <p style={{ marginBottom: 0 }}>Already Registered?</p>
             <Link
               to={"/signin"}
-              style={{ textDecoration: "none", color: "#271776ca" }}
+              style={{ textDecoration: "none", color: "pink" }}
             >
               Login Now
             </Link>

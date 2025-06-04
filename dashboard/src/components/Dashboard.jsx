@@ -113,7 +113,7 @@ const Dashboard = () => {
               Filter by Department:
             </label>
             <select
-              id="department-filter"
+              id="dropdown"
               value={selectedDepartment}
               className="dropdown"
               onChange={(e) => setSelectedDepartment(e.target.value)}
@@ -161,6 +161,7 @@ const Dashboard = () => {
                           onChange={(e) =>
                             handleUpdateStatus(appointment._id, e.target.value)
                           }
+
                         >
                           <option value="Pending" className="value-pending">
                             Pending

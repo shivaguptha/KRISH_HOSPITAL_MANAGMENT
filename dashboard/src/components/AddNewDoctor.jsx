@@ -98,7 +98,7 @@ const AddNewDoctor = () => {
   }
   return (
     <section className="page">
-      <section className="container add-doctor-form">
+      <section className="container form-component add-doctor-form">
         <img src="/logo.png" alt="logo" className="logo" width="400" height="400" />
         <h1 className="form-title">
           {doctor ? "UPDATE DOCTOR DETAILS" : "REGISTER A NEW DOCTOR"}

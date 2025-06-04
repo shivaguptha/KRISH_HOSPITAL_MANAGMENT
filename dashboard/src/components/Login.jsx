@@ -44,22 +44,37 @@ const Login = () => {
 
   return (
     <>
-      <section className="container form-component">
+      <section className="container form-component" 
+      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+      >
         <img src="/logo.png" alt="logo" className="logo" width="400" height="400" />
-        <h1 className="form-title">WELCOME TO Krish_Hospital</h1>
-        <p>Only Admins Are Allowed To Access These Resources!</p>
-        <form onSubmit={handleLogin}>
+        <h1 className="form-title"
+        style={{marginBottom:"50px"}}
+        >WELCOME TO Krish_Hospital</h1>
+        <p
+        style={{marginBottom:"50px"}}
+        
+        >Only Admins Are Allowed To Access These Resources!</p>
+        <form onSubmit={handleLogin}
+        style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+        
+        >
           <input
+          className="input-field"
             type="text"
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+
           />
           <input
+          className="input-field"
+
             type="password"
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+
           />
           
           
