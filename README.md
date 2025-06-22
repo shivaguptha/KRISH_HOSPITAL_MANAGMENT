@@ -13,7 +13,7 @@ A modern hospital management system designed to streamline hospital operations, 
 
 ## Technologies Used
 
-- React.js Node.js Express.js MondoDB 
+- React.js Node.js Express.js MondoDB. 
 
 ## Features
 
