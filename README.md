@@ -1,4 +1,4 @@
-# KRISH_HOSPITAL_MANAGMENT
+# KRISH_HOSPITAL_MANAGEMENT
 
 A modern hospital management system designed to streamline hospital operations, patient management, and administrative tasks.
 
