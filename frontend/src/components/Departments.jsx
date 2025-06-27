@@ -72,10 +72,8 @@ const Departments = () => {
         <Carousel
           responsive={responsive}
           removeArrowOnDeviceType={[
-            // "superLargeDesktop",
-            // "desktop",
-            "tablet",
-            "mobile",
+            "medium",
+            "small",
           ]}
         >
           {departmentsArray.map((depart, index) => {
