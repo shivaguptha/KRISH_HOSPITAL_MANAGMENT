@@ -50,11 +50,11 @@ This project is deployed on **Netlify** for easy access.
 
 **patient Portal:** [PATIENT](https://krishhospital.netlify.app/)  
 **Admin Portal:** [ADMIN](https://krish-hospital-admin.netlify.app/)  
-* Admin Credentials *  
+*Admin Credentials*  
 Email: admin@gmail.com  
 Password: admin@123
 
-* patient credentials *
+*patient credentials*
 Email: guptha@gmail.com
 Password: guptha@123
 
