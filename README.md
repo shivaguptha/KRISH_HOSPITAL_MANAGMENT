@@ -1,10 +1,10 @@
-# KRISH_HOSPITAL_MANAGEMENT
+# HOSPITAL_MANAGEMENT
 
 A modern hospital management system designed to streamline hospital operations, patient management, and administrative tasks.
 
 ## Project Structure
 
-    KRISH_HOSPITAL_MANAGMENT/
+    HOSPITAL_MANAGMENT/
     ├── backend/ # Backend logic and APIs
     ├── dashboard/ # Admin and staff dashboards
     ├── frontend/ # User interfaces and web components
@@ -48,11 +48,14 @@ A modern hospital management system designed to streamline hospital operations, 
 
 This project is deployed on **Netlify** for easy access.
 
-**Users Portal:** [KRISH_HOSPITAL](https://krishhospital.netlify.app/)  
-**Admin Portal:** [KRISH_HOSPITAL_ADMIN](https://krish-hospital-admin.netlify.app/)  
+**patient Portal:** [patient](https://krishhospital.netlify.app/)  
+**Admin Portal:** [admin](https://krish-hospital-admin.netlify.app/)  
 *Admin Credentials*  
-Email: shiva@gmail.com  
-Password: shiva@123
+Email: admin@gmail.com  
+Password: admin@123
+*patient credentials*
+Email: guptha@gmail.com
+Password: guptha@123
 
 ## Contribution
 
