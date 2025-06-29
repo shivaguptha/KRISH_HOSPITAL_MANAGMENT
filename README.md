@@ -29,8 +29,8 @@ A modern hospital management system designed to streamline hospital operations, 
 
 1. **Clone the repository:**
    ```sh
-    git clone https://github.com/shivaguptha/KRISH_HOSPITAL_MANAGMENT.git
-    cd KRISH_HOSPITAL_MANAGMENT
+    git clone https://github.com/shivaguptha/HOSPITAL_MANAGMENT.git
+    cd HOSPITAL_MANAGMENT
 
 2. **Install dependencies:**
    ```sh
