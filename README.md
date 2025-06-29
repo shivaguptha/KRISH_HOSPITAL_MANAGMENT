@@ -55,8 +55,8 @@ Email: admin@gmail.com
 Password: admin@123
 
 *patient credentials*  
-Email: guptha@gmail.com  
-Password: guptha@123  
+Email: patient@gmail.com  
+Password: patient@123  
 
 ## Contribution
 
