@@ -54,9 +54,9 @@ This project is deployed on **Netlify** for easy access.
 Email: admin@gmail.com  
 Password: admin@123
 
-*patient credentials*
-Email: guptha@gmail.com
-Password: guptha@123
+*patient credentials*  
+Email: guptha@gmail.com  
+Password: guptha@123  
 
 ## Contribution
 
