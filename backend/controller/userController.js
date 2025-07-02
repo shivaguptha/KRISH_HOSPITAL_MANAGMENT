@@ -100,7 +100,6 @@ export const addNewAdmin = catchAsyncErrors(async (req, res, next) => {
     dob,
     gender,
     password,
-    confirmpassword,
     role: "Admin",
   });
   res.status(200).json({
