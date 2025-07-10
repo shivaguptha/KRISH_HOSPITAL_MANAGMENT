@@ -58,13 +58,7 @@ export const login = catchAsyncErrors(async (req, res, next) => {
   }
 
   generateToken(user, "Logged In Successfully!", 201, res);
-  // Example backend response
-res.status(201).json({
-  success: true,
-  message: "Logged In Successfully!",
-  user: { email: user.email, role: user.role},
-});
-
+ 
 });
 
 export const addNewAdmin = catchAsyncErrors(async (req, res, next) => {
